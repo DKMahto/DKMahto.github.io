@@ -21,6 +21,38 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Justify textual content in the main area while keeping navigation and headings readable -->
+    <style>
+      /* Apply justification to the main content paragraphs, list items and card bodies */
+      main, main .card-body, main p, main li, main .lead, main .text-muted, main .small {
+        text-align: justify;
+        text-justify: inter-word;
+      }
+
+      /* Keep headings left-aligned for visual hierarchy and better scanability */
+      main h1, main h3, main h5, main h6 {
+        text-align: left;
+      }
+
+      /* Keep inline controls and badges from being stretched by justification */
+      .hero-tags,
+      .navbar-brand,
+      header .nav-link,
+      .badge,
+      .d-flex > a.btn,
+      .profile-img,
+      .social {
+        text-align: left;
+      }
+
+      /* Prevent justification from affecting small nav-like metadata in card headers */
+      .card .text-end,
+      .card .badge,
+      .card .small {
+        text-align: right;
+      }
+    </style>
   </head>
 
   <body>
@@ -76,7 +108,7 @@
                 <span class="badge bg-soft-primary">Active Distribution Network</span>
               </p>
 
-              <p class="mb-4 text-muted">I design data-driven and deep-learning solutions for power system optimization and grid-aware BESS analytics. Passionate about bridging ML and power systems for reliable, efficient grids.</p>
+              <p class="mb-4 text-muted">I design data-driven and deep-learning solutions for power system optimization and grid-aware BESS analytics. Passionate about bridging ML and power systems fo[...]
 
               <div class="d-flex gap-2">
                 <a class="btn btn-primary btn-lg" href="#publications"><i class="fa fa-download me-2"></i>See My Work</a>
@@ -94,7 +126,7 @@
               <div class="card h-100 shadow-sm">
                 <div class="card-body">
                   <h5 class="card-title">About Me</h5>
-                  <p class="card-text text-muted">I completed my Ph.D. in Electrical Engineering at MNIT Jaipur. My research focuses on data-driven optimal power flow, grid-aware machine learning, and management of distributed energy resources.</p>
+                  <p class="card-text text-muted">I completed my Ph.D. in Electrical Engineering at MNIT Jaipur. My research focuses on data-driven optimal power flow, grid-aware machine learning, and[...]
                   <ul class="list-unstyled mb-0">
                     <li><strong>Location:</strong> Bengaluru, India</li>
                     <li><strong>Email:</strong> <a href="mailto:info.dineshmahto@gmail.com">info.dineshmahto@gmail.com</a></li>
@@ -138,7 +170,7 @@
                   <div class="card shadow-sm h-100">
                     <div class="card-body">
                       <h6 class="mb-3">Summary</h6>
-                      <p class="text-muted small">Experienced in grid-scale BESS analytics, OPF, and ML pipelines for power systems. Skilled in data-driven modelling, simulation, and building production-ready ML workflows integrated with power system tools.</p>
+                      <p class="text-muted small">Experienced in grid-scale BESS analytics, OPF, and ML pipelines for power systems. Skilled in data-driven modelling, simulation, and building producti[...]
 
                       <h6 class="mt-4 mb-2">Education</h6>
                       <ul class="timeline list-unstyled small">
@@ -187,7 +219,7 @@
                 <div class="card-body">
                   <h5 class="mb-1">Research Assistant — MNIT Jaipur</h5>
                   <small class="text-muted">Jaipur, India • 06-Jan-2020 — 20-Dec-2024</small>
-                  <p class="mt-2 text-muted">Research and lab work in power system simulation, Conducted BEE lab and Supervise undergraduate and postgraduate students on problem statement and python coding.</p>
+                  <p class="mt-2 text-muted">Research and lab work in power system simulation, Conducted BEE lab and Supervise undergraduate and postgraduate students on problem statement and python c[...]
                 </div>
               </div>
             </div>
@@ -355,7 +387,7 @@
               <div class="card shadow-sm">
                 <div class="card-body">
                   <h5>Extracurricular interests</h5>
-                  <p class="small text-muted">During my leisure time, I stay balanced by playing sports, sharpening my strategic thinking through chess and carrom, and travelling to discover new destinations and perspectives.</p>
+                  <p class="small text-muted">During my leisure time, I stay balanced by playing sports, sharpening my strategic thinking through chess and carrom, and travelling to discover new desti[...]
 
                   <!-- Example form (disabled) -->
                   <!--
